@@ -1,0 +1,274 @@
+/*global*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+h2{
+    font-size: 40px; 
+
+}
+h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+h4{
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+a { 
+    text-decoration: none;
+}
+
+
+/* img{
+    max-width: 100%;
+} */
+
+/*utilities*/
+
+/*nav*/
+nav {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.read-btn {
+    color: white;
+    text-decoration: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+nav.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 42px;
+}
+nav.menu a{
+    margin-right: 20px;
+}
+img.logo-border{
+    height: 32px;
+    margin-left: 20px;
+}
+img.logo-complete{
+    display:none;
+}
+a.link-login{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+a.link-search{
+    display: none;
+}
+a.link-news{
+    display: none;
+}
+a.link-subs{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 11px;
+}
+a.link-menu{
+    display: none;
+}
+a.link-arrow{
+    color: black;
+
+}
+
+/*header*/
+.main-news{
+    position: relative;
+
+}
+
+.main-news-text{
+    position: absolute;
+    bottom: 2rem;
+    left: 2 rem;
+    font-weight: bold;
+}
+
+.main-news-text h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    }
+.main-news-text p{
+    font-size: 35px;
+    font-weight: bold;
+    color:white;
+    
+}
+.main-news-text a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-news img{
+    max-width:100% ;
+}
+.secondary-news img {
+    height: 350px;
+    width: 100%;
+}
+
+.seconday-news-text {
+    background-color: black;
+    color: white;
+    margin-top: 3px;
+    padding: 30px;
+    font-weight: bold;
+
+}
+
+.read-btn{
+    justify-content: space-around;
+    
+}
+header {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.header-title{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header-info{
+    font-size: 16px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: .9px;
+    color:#ffff;
+
+}
+
+span {
+	padding: 0 5px;
+	box-shadow: inset 0 0 0 0 #fff;
+	transition: all 0.5s ease-in-out 0s;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #fc0;
+    cursor: pointer;
+}
+
+span:hover {
+    box-shadow: inset 0 -300px 0 #fc0;
+        color: black;
+        font-weight: 400;
+}
+
+.bar{
+    height: 5px;
+    box-align: center;
+    width: 5%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #fc0;
+}
+.todays-picks-item{
+    width:500px;
+}
+.bar2{
+    /* height: 5px;
+    box-align: center;
+    width: 5%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    flex-direction: horizontal;
+    background: #fc0; */
+    border-left: solid #fc0 5px;
+    padding-left: 3.5rem;
+    margin: 10px;
+}
+.todays-picks-item-img{
+    display: inline-flex;
+    width: 350px;
+
+}
+.todays-picks-item-img img{
+    width: 8rem;
+    height: 10rem;
+}
+
+.todays-picks-text {
+    margin-left: 10px;
+    width: 90%;
+}
+
+@media(min-width:768px){
+    main{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row-reverse
+    }
+    main .news{
+        width: 60%;
+    }
+    main section{
+        width: 40%;
+    }
+}
+
+.img-container{
+    height: 350px;
+    width: 100%;
+    background-image: url(../img/ngm-2211-tut-treasure-dataviz_primary_ai2html-desktop-small.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+main.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+main.flex-container, list-container{
+    width: 50%;
+    height: 400px;
+    background-color: #f9d0d0;
+}
